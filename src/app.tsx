@@ -2,7 +2,7 @@ export function App() {
   return (
     <>
       <div>
-        <p class={'flex text-4xl text-green-500'} />
+        <p class={'flex text-4xl text-green-500'}>New personal webiste :)</p>
       </div>
     </>
   );
