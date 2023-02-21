@@ -11,5 +11,6 @@ export default defineConfig({
       '@components': resolve(__dirname, './src/components'),
     },
   },
+  base: '/',
   plugins: [preact()],
 });
