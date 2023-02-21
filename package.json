@@ -12,13 +12,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": ["lint-staged","build"]
+      "pre-commit": "lint-staged . && run build"
     }
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint --fix",
     "*.{css,scss}": "stylelint --fix",
-    "*": "prettier -w -u"
+    "*": "prettier -w"
   },
   "dependencies": {
     "jest": "^29.4.3",
