@@ -1,9 +1,19 @@
+import Nav from '@components/Nav';
+import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import Projects from './components/Projects';
+
 export function App() {
   return (
     <>
-      <div>
-        <p class={'flex text-4xl text-green-500'}>New personal webiste :)</p>
-      </div>
+      <Nav />
+      <main>
+        <Home />
+        <AboutMe />
+        <Projects />
+      </main>
+      <Footer />
     </>
   );
 }
