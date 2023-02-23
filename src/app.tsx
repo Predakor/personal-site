@@ -8,7 +8,7 @@ export function App() {
   return (
     <>
       <Nav />
-      <main>
+      <main className={''}>
         <Home />
         <AboutMe />
         <Projects />

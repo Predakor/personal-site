@@ -1,10 +1,10 @@
 function Home() {
   return (
-    <section className={'relative h-screen bg-transparent'}>
+    <section className={'h-screen bg-transparent'} id={'home'}>
       <img
         src="/background.jpg"
-        role="presenation"
-        className={'fixed -z-50 h-full w-full'}
+        role="presentation"
+        className={'fixed left-0 top-0 -z-50 h-full w-full'}
       />
       <h2>Hey</h2>
     </section>

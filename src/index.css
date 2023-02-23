@@ -6,25 +6,23 @@
   * {
     @apply m-0 box-border p-0;
   }
+  html {
+    @apply scroll-smooth bg-slate-800;
+  }
+  body {
+    @apply font-normal text-white text-opacity-90;
+  }
   section {
-    @apply min-h-screen bg-slate-800;
+    @apply min-h-screen bg-slate-800 p-4;
   }
-
   ::-webkit-scrollbar {
-    @apply w-[0.5vw] overflow-y-auto;
-    scrollbar-gutter: stable;
-  }
-  ::-webkit-scrollbar-thumb {
-    @apply bg-blue-600;
+    @apply hidden;
   }
 
   :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
-    font-weight: 400;
     color-scheme: light dark;
-    color: rgba(255 255 255 / 87%);
-    background-color: #242424;
     font-synthesis: none;
     text-rendering: optimizelegibility;
   }

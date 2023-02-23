@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <section className="">
+    <section className="" id={'about'}>
       <h2>Hi I'm Patrick</h2>
       <h3>Front-end developer</h3>
       <p>
