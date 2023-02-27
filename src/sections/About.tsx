@@ -1,6 +1,13 @@
-export default function AboutMe() {
+import { motion } from 'framer-motion';
+
+export default function About() {
   return (
-    <section className="" id={'about'}>
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      id={'about'}
+    >
       <h2>Hi I'm Patrick</h2>
       <h3>Front-end developer</h3>
       <p>
@@ -11,6 +18,6 @@ export default function AboutMe() {
         pariatur obcaecati, nihil illum laborum unde magni, modi et, inventore
         porro asperiores ipsam odit! Sed.
       </p>
-    </section>
+    </motion.section>
   );
 }

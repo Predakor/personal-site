@@ -16,11 +16,13 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@assets/*": ["src/assets/*"]
+      "@/*": ["/*"],
+      "@components/*": ["components/*"],
+      "@sections/*": ["sections/*"],
+      "@layout/*": ["layout/*"],
+      "@assets/*": ["assets/*"]
     }
   },
   "include": ["src"],

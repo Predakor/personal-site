@@ -1,6 +1,13 @@
+import { motion } from 'framer-motion';
+
 function Nav({}) {
   return (
-    <nav class={'fixed z-50 w-full p-4 text-2xl'}>
+    <motion.nav
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      class={'fixed z-50 w-full p-4 text-2xl'}
+    >
       <ul class={'flex justify-end gap-4'}>
         <li>
           <a href="#home">Home</a>
@@ -15,7 +22,7 @@ function Nav({}) {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-    </nav>
+    </motion.nav>
   );
 }
 export default Nav;

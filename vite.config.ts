@@ -1,16 +1,8 @@
 import preact from '@preact/preset-vite';
-import { resolve } from 'path';
 import { defineConfig } from 'vite';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  resolve: {
-    alias: {
-      '@': resolve(__dirname, './src'),
-      '@assets': resolve(__dirname, './src/assets'),
-      '@components': resolve(__dirname, './src/components'),
-    },
-  },
-  base: '/',
-  plugins: [preact()],
+  plugins: [preact(), tsconfigPaths()],
 });
